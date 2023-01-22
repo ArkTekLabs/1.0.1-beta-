@@ -6,6 +6,11 @@ body {
   grid-gap: 2px;
 }
 
+body.menu-open .menu {
+    display: flex;
+}
+
+
 /* Define containers for different column widths */
 
 arktek1 { grid-column: span 1; }
@@ -52,6 +57,7 @@ arkteknav-s[color] {
 .menu {
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-toggle {
