@@ -64,6 +64,13 @@ arkteknav-s[color] {
   display: none;
 }
 
+/
+/*Define card*/
+arktek-card {
+  grid-column: span 2; /* 2 columns */
+  background-color: #f5f5f5;
+  padding: 20px;
+}
 
 
 /* Define hero */
@@ -338,5 +345,9 @@ border: solid 2px #6b6b6b;
     left: 0;
     width: 100%;
     background: #ffffff;
+  }
   
+  arktek-card {
+    grid-column: span 10;
+}
 }
