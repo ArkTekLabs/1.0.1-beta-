@@ -1,0 +1,442 @@
+/*Artek with Grid system grid changes to flexboxes*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+arktek {
+    flex: 1;
+    max-width: 10%;
+    flex-basis: 10%;
+}
+
+arktek2 {
+    flex: 1;
+    max-width: 20%;
+    flex-basis: 20%;
+}
+
+arktek3 {
+    flex: 1;
+    max-width: 30%;
+    flex-basis: 30%;
+}
+
+arktek4 {
+    flex: 1;
+    max-width: 40%;
+    flex-basis: 40%;
+}
+
+arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+arktek6 {
+    flex: 1;
+    max-width: 60%;
+    flex-basis: 60%;
+}
+
+arktek7 {
+    flex: 1;
+    max-width: 70%;
+    flex-basis: 70%;
+}
+
+arktek8 {
+    flex: 1;
+    max-width: 80%;
+    flex-basis: 80%;
+}
+
+arktek9 {
+    flex: 1;
+    max-width: 90%;
+    flex-basis: 90%;
+}
+
+
+
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+}
+/* Define Navigation*/
+
+arkteknav {
+ flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 60px
+}
+
+arkteknav[color] {
+  background-color: attr(color);
+}
+
+arkteknav-s {
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed; /* make it sticky */
+  top: 0; /* position it at the top */
+}
+
+arkteknav-s[color] {
+  background-color: attr(color);
+}
+
+.menu {
+  display: flex;
+  flex-basis: 30
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Define card*/
+arktek-card {
+  flex: 1;
+  max-width: 25%;
+  flex-basis: 25%;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Define hero */
+
+arktek-hero {
+ flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  padding: 20px;
+}
+
+arktek-hero[color] {
+  background-color: attr(color);
+}
+
+/* Define tables */
+.arktable {
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #F8F8F8;
+  border-style: solid;
+  color: #000000;
+}
+.arktable td, .arktable th {
+  border-width: 2px;
+  border-color: #F8F8F8;
+  border-style: solid;
+  padding: 5px;
+}
+.arktable thead {
+  background-color: #F8F8F8;
+}
+
+/* Define modal */
+.arkpop {
+  display: none; /* hide the pop up by default */
+}
+
+.arkpop-content {
+  width: 80%; /* set the width to 80% of the screen */
+  margin: 0 auto; /* center the pop up horizontally */
+  position: absolute; /* position the pop up in the center and middle of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  z-index: 99;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+/* create an overlay with a .3 opacity */
+.arkpop::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 98;
+}
+
+/* add a fade in animation to the pop up */
+.arkpop.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*Arktek Buttons & Styles*/
+
+
+.arkbtn{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkbtn:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+
+}
+
+
+.arkalert{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #d62828;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkalert:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #d62828;
+border: solid 2px #d62828;
+
+}
+
+.arctcaut{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #e9c46a;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkcaut:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #e9c46a;
+border: solid 2px #e9c46a;
+
+}
+
+
+.arkgo{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #2a9d8f;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkgo:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #2a9d8f;
+border: solid 2px #2a9d8f;
+
+}
+
+
+.arkout{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #636363;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkout:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #808080;
+border: solid 2px #6b6b6b;
+
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+   arktek-hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+ arktek1, arktek2, arktek3, arktek4 {
+   flex: 1;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  
+  arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+ 
+  arktek6, arktek7,arktek8, arktek9 {
+   flex: 1;
+    max-width: 75%;
+    flex-basis: 75%; 
+  }
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+   arktek-hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+ arktek1, arktek2, arktek3, arktek4 {
+   flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  
+  arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+ 
+  arktek6, arktek7,arktek8, arktek9 {
+   flex: 1;
+    max-width: 50%;
+    flex-basis: 50%; 
+  }
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+arktek-card {
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+}
