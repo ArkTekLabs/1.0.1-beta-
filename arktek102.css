@@ -76,7 +76,7 @@ arkteknav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  min-height: 60px
+  min-height: 60px;
 }
 
 arkteknav[color] {
@@ -92,6 +92,7 @@ arkteknav-s {
   padding: 10px;
   position: fixed; /* make it sticky */
   top: 0; /* position it at the top */
+  min-height: 60px;
 }
 
 arkteknav-s[color] {
