@@ -1,36 +1,82 @@
 /*Artek with Grid system*/
 
 body {
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-gap: 2px;
-}
-
-body.menu-open .menu {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-/* Define containers for different column widths */
+arktek {
+    flex: 1;
+    max-width: 10%;
+    flex-basis: 10%;
+}
 
-.arktek1 { grid-column: span 1; grid-row: 1;}
-.arktek2 { grid-column: span 2; grid-row: 1;}
-.arktek3 { grid-column: span 3; grid-row: 1;}
-.arktek4 { grid-column: span 4; grid-row: 1;}
-.arktek5 { grid-column: span 5; grid-row: 1;}
-.arktek6 { grid-column: span 6; grid-row: 1;}
-.arktek7 { grid-column: span 7; grid-row: 1;}
-.arktek8 { grid-column: span 8; grid-row: 1;}
-.arktek9 { grid-column: span 9; grid-row: 1;}
-.arktek10 { grid-column: span 10; grid-row: 1;}
+arktek2 {
+    flex: 1;
+    max-width: 20%;
+    flex-basis: 20%;
+}
 
+arktek3 {
+    flex: 1;
+    max-width: 30%;
+    flex-basis: 30%;
+}
+
+arktek4 {
+    flex: 1;
+    max-width: 40%;
+    flex-basis: 40%;
+}
+
+arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+arktek6 {
+    flex: 1;
+    max-width: 60%;
+    flex-basis: 60%;
+}
+
+arktek7 {
+    flex: 1;
+    max-width: 70%;
+    flex-basis: 70%;
+}
+
+arktek8 {
+    flex: 1;
+    max-width: 80%;
+    flex-basis: 80%;
+}
+
+arktek9 {
+    flex: 1;
+    max-width: 90%;
+    flex-basis: 90%;
+}
+
+
+
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+}
 /* Define Navigation*/
 
-.arkteknav {
-  grid-column: 1 / -1; /* span all columns */
-  display: flex;
+arkteknav {
+ flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  min-height: 60px
 }
 
 .arkteknav[color] {
@@ -38,8 +84,9 @@ body.menu-open .menu {
 }
 
 .arkteknav-s {
-  grid-column: 1 / -1; /* span all columns */
-  display: flex;
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -53,6 +100,7 @@ body.menu-open .menu {
 
 .menu {
   display: flex;
+  flex-basis: 30
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
@@ -62,16 +110,20 @@ body.menu-open .menu {
 }
 
 /* Define card*/
-.arktek-card {
-  grid-column: span 2; /* 2 columns */
+arktek-card {
+  flex: 1;
+  max-width: 25%;
+  flex-basis: 25%;
   background-color: #f5f5f5;
   padding: 20px;
 }
 
 /* Define hero */
 
-.arktek-hero {
-  grid-column: 1 / -1; /* span all columns from the first to the last */
+arktek-hero {
+ flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
   padding: 20px;
 }
 
@@ -81,7 +133,9 @@ body.menu-open .menu {
 
 /* Define tables */
 .arktable {
-  width: 100%;
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
   background-color: #FFFFFF;
   border-collapse: collapse;
   border-width: 2px;
@@ -304,44 +358,85 @@ border: solid 2px #6b6b6b;
 
 @media (max-width: 992px) {
   body {
-    grid-template-columns: repeat(10, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
-   .arktek-hero {
-    grid-column: 1 / 8;
+   arktek-hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
+ arktek1, arktek2, arktek3, arktek4 {
+   flex: 1;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  
+  arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
  
+  arktek6, arktek7,arktek8, arktek9 {
+   flex: 1;
+    max-width: 75%;
+    flex-basis: 75%; 
+  }
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 
-
-
-
-
+}
 
 
 
 @media (max-width: 768px) {
   body {
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
-   .arktek-hero {
-    grid-column: 1 / 5;
+   arktek-hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
-  .menu-toggle {
-    display: block;
+ arktek1, arktek2, arktek3, arktek4 {
+   flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  
+  arktek5 {
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+ 
+  arktek6, arktek7,arktek8, arktek9 {
+   flex: 1;
+    max-width: 50%;
+    flex-basis: 50%; 
+  }
+arktek10 {
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 100%;
   }
 
-  .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-  }
-  
-  arktek-card {
-    grid-column: span 10;
+arktek-card {
+  flex: 1;
+  max-width: 100%;
+  flex-basis: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 }
