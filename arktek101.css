@@ -12,16 +12,16 @@ body.menu-open .menu {
 
 /* Define containers for different column widths */
 
-.arktek1 { grid-column: span 1;}
-.arktek2 { grid-column: span 2;}
-.arktek3 { grid-column: span 3;}
-.arktek4 { grid-column: span 4;}
-.arktek5 { grid-column: span 5;}
-.arktek6 { grid-column: span 6;}
-.arktek7 { grid-column: span 7;}
-.arktek8 { grid-column: span 8;}
-.arktek9 { grid-column: span 9;}
-.arktek10 { grid-column: span 10;}
+.arktek1 { grid-row: span 1;}
+.arktek2 { grid-row: span 2;}
+.arktek3 { grid-row: span 3;}
+.arktek4 { grid-row: span 4;}
+.arktek5 { grid-row: span 5;}
+.arktek6 { grid-row: span 6;}
+.arktek7 { grid-row: span 7;}
+.arktek8 { grid-row: span 8;}
+.arktek9 { grid-row: span 9;}
+.arktek10 { grid-row: span 10;}
 
 /* Define Navigation*/
 
