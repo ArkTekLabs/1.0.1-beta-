@@ -79,11 +79,11 @@ arkteknav {
   min-height: 60px
 }
 
-.arkteknav[color] {
+arkteknav[color] {
   background-color: attr(color);
 }
 
-.arkteknav-s {
+arkteknav-s {
   flex: 1;
   max-width: 100%;
   flex-basis: 100%;
@@ -94,7 +94,7 @@ arkteknav {
   top: 0; /* position it at the top */
 }
 
-.arkteknav-s[color] {
+arkteknav-s[color] {
   background-color: attr(color);
 }
 
@@ -127,7 +127,7 @@ arktek-hero {
   padding: 20px;
 }
 
-.arktek-hero[color] {
+arktek-hero[color] {
   background-color: attr(color);
 }
 
